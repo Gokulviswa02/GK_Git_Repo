@@ -6,11 +6,11 @@ modules:
   type: hdb
   path: First_module_db
   requires:
-  - name: hdi_First_instance
+  - name: hdi_First_module_db
     properties:
       TARGET_CONTAINER: ~{hdi-container-name}
 resources:
-- name: hdi_First_instance
+- name: hdi_First_module_db
   type: com.sap.xs.hdi-container
   parameters:
     config:
