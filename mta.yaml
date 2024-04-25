@@ -12,8 +12,6 @@ modules:
 resources:
 - name: First_HDI_Instance
   type: com.sap.xs.hdi-container
-  parameters:
-    config:
-      schema: First_Schema
+
   properties:
     hdi-container-name: First_HDI_Instance
