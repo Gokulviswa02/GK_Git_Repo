@@ -1,0 +1,19 @@
+_schema-version: "2.1"
+ID: First_Proj
+version: 0.0.1
+modules:
+- name: First_module_db
+  type: hdb
+  path: First_module_db
+  requires:
+  - name: hdi_First_module_db
+    properties:
+      TARGET_CONTAINER: ~{hdi-container-name}
+resources:
+- name: hdi_First_module_db
+  type: com.sap.xs.hdi-container
+  parameters:
+    config:
+      schema: First_Schema
+  properties:
+    hdi-container-name: ${service-name}

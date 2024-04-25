@@ -1,0 +1,6 @@
+COLUMN TABLE "First_Namespace::First_Table" (
+        Employee_Id INT PRIMARY KEY,  
+        Employee_Name VARCHAR (50),  
+        Employee_Salary INT NOT NULL,  
+        Employee_City VARCHAR (50)  
+) ;  
